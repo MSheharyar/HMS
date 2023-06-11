@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="~/Assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Assets/css/icons.css">
+    <link rel="stylesheet" href="~/Assets/css-dark/style.css">
+    <link rel="stylesheet" href="~/Assets/plugins/scroll-bar/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="~/Assets/plugins/chartist-dark/chartist.css">
+    <link rel="stylesheet" href="~/Assets/plugins/chartist-dark/chartist-plugin-tooltip.css">
+    <link href="~/Assets/plugins/horizontal-menu-dark/dropdown-effects/fade-down.css" rel="stylesheet">
+    <link href="~/Assets/plugins/horizontal-menu-dark/webslidemenu.css" rel="stylesheet">
+</head>
+<body class="app ">
+    <div id="spinner"></div>
+    <div id="app" class="page">
+        <div class="main-wrapper page-main">
+            <nav class="navbar navbar-expand-lg main-navbar" id="headerMenuCollapse">
+                <div class="container">
+                    <a id="horizontal-navtoggle" class="animated-arrow"><span></span></a>
+                    <a class="header-brand" href="~/Dashboard/Index">
+                        <img src="../assets/img/brand/logowhite.png" class="header-brand-img" alt="  Asta-Admin  logo">
+                    </a>
+                </div>
+            </nav>
+            <div class="horizontal-main clearfix">
+                <div class="horizontal-mainwrapper container clearfix">
+                    <nav class="horizontalMenu clearfix">
+                        <ul class="horizontalMenu-list">
+                            <li aria-haspopup="true">
+                                <a href="~/Dashboard/Index"><i class="fa fa-desktop"></i> Dashboard</a>
+                            </li>
+                            <li aria-haspopup="true">
+                                <a href="#" class="">
+                                    <i class="fe fe-menu"></i> Category
+                                </a>
+                                <ul class="sub-menu">
+                                    <li aria-haspopup="true"><a href="~/TBLCategories/Create">Add Category</a></li>
+                                    <li aria-haspopup="true"><a href="~/TBLCategories/Index">View Categories</a></li>
+                                </ul>
+                            </li>
+                            <li aria-haspopup="true">
+                                <a href="#" class="">
+                                    <i class="icon-login"></i> Room
+                                </a>
+                                <ul class="sub-menu">
+                                    <li aria-haspopup="true"><a href="~/TBLRooms/Create">Add Room</a></li>
+                                    <li aria-haspopup="true"><a href="~/TBLRooms/Index">View Rooms</a></li>
+                                </ul>
+                            </li>
+                            <li aria-haspopup="true">
+                                <a href="#" class="">
+                                    <i class="fe fe-users"></i> User
+                                </a>
+                                <ul class="sub-menu">
+                                    <li aria-haspopup="true"><a href="~/TBLUsers/Create">Add User</a></li>
+                                    <li aria-haspopup="true"><a href="~/TBLUsers/Index">View Users</a></li>
+                                </ul>
+                            </li>
+                            <li aria-haspopup="true">
+                                <a href="#" class="">
+                                    <i class="fe fe-users"></i> Booking
+                                </a>
+                                <ul class="sub-menu">
+                                    <li aria-haspopup="true"><a href="~/TBLBookings/Create">Add Booking</a></li>
+                                    <li aria-haspopup="true"><a href="~/TBLBookings/Index">View Bookings</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="container content-area">
+                
+                @RenderBody()
+            </div>
+            <footer class="main-footer">
+                <div class="text-center">
+                    Copyright &copy;  Hotel Management System.
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="~/Assets/js-dark/jquery.min.js"></script>
+    <script src="~/Assets/js-dark/popper.js"></script>
+    <script src="~/Assets/js-dark/tooltip.js"></script>
+    <script src="~/Assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Assets/plugins/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="~/Assets/plugins/scroll-up-bar/dist/scroll-up-bar.min.js"></script>
+    <script src="~/Assets/plugins/horizontal-menu-dark/webslidemenu.js"></script>
+    <script src="~/Assets/js-dark/chart.min.js"></script>
+    <script src="~/Assets/plugins/othercharts/jquery.knob.js"></script>
+    <script src="~/Assets/plugins/othercharts/jquery.sparkline.min.js"></script>
+    <script src="~/Assets/plugins/morris/morris.min.js"></script>
+    <script src="~/Assets/plugins/morris/raphael.min.js"></script>
+    <script src="~/Assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/Assets/plugins/fullcalendar-dark/calendar.min.js"></script>
+    <script src="~/Assets/js-dark/apexcharts.js"></script>
+    <script src="~/Assets/js-dark/scripts.js"></script>
+    <script src="~/Assets/js-dark/dashboard.js"></script>
+    <script src="~/Assets/plugins/echarts/echarts.js"></script>
+    <script src="~/Assets/js-dark/othercharts.js"></script>
+</body>
+</html>

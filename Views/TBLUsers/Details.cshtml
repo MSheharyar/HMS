@@ -1,0 +1,58 @@
+﻿@model HMS_Project.Models.TBLUser
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<br />
+<h4>User Detail</h4>
+
+<div>
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.User_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User_Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User_Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User_Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User_Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User_Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User_Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User_Password)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID })
+</p>
